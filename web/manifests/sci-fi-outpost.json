@@ -1,0 +1,119 @@
+{
+  "name": "sci-fi-outpost",
+  "style": "cyberpunk",
+  "theme": {
+    "fog": "#0b1118",
+    "floor": "#26313b",
+    "accent": "#4fd8ff"
+  },
+  "slots": [
+    {
+      "slot": "crate",
+      "file": "/artifacts/sci-fi-outpost/glbs/crate.glb",
+      "position": [
+        -2.2,
+        0.0,
+        -1.0
+      ],
+      "rotation": [
+        0.0,
+        35.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "da27bc872236",
+      "task_id": 8398353,
+      "gates": "passed"
+    },
+    {
+      "slot": "barrel",
+      "file": "/artifacts/sci-fi-outpost/glbs/barrel.glb",
+      "position": [
+        1.8,
+        0.0,
+        -1.4
+      ],
+      "rotation": [
+        0.0,
+        -15.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "168c98b49155",
+      "task_id": 8398355,
+      "gates": "passed"
+    },
+    {
+      "slot": "brazier",
+      "file": "/artifacts/sci-fi-outpost/glbs/brazier.glb",
+      "position": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "216f26fde10f",
+      "task_id": 8398354,
+      "gates": "passed"
+    },
+    {
+      "slot": "chest",
+      "file": "/artifacts/sci-fi-outpost/glbs/chest.glb",
+      "position": [
+        -1.6,
+        0.0,
+        1.6
+      ],
+      "rotation": [
+        0.0,
+        70.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "9f13c4e03652",
+      "task_id": 8398637,
+      "gates": "passed"
+    },
+    {
+      "slot": "lantern",
+      "file": "/artifacts/sci-fi-outpost/glbs/lantern.glb",
+      "position": [
+        2.4,
+        0.0,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        10.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "a8db48114091",
+      "task_id": 8398650,
+      "gates": "passed"
+    },
+    {
+      "slot": "golem",
+      "file": "/artifacts/sci-fi-outpost/glbs/golem.glb",
+      "position": [
+        0.4,
+        0.0,
+        -2.4
+      ],
+      "rotation": [
+        0.0,
+        160.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "304f10a69871",
+      "task_id": 8398916,
+      "gates": "passed"
+    }
+  ]
+}

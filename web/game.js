@@ -133,9 +133,15 @@ function loadPack(name, { announce } = {}) {
       b.classList.toggle('active', b.id === 'btn-' + manifest.name));
     counterTotal.textContent = manifest.slots.length; counterN.textContent = 0;
     receiptRows(manifest);
+    // resolve repo-root-absolute paths so the demo works from any base URL
+    // (localhost:8000/web/ or username.github.io/<repo>/web/)
+    const base = location.pathname.replace(/\/web\/.*$/, '');
     let loaded = 0;
     manifest.slots.forEach(slot => {
-      loader.load(slot.file, gltf => {
+      const file = slot.file.startsWith('/')
+        ? base + slot.file
+        : (slot.file.startsWith('../') ? slot.file.slice(3) : slot.file);
+      loader.load(file, gltf => {
         gltf.scene.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
         const group = fitAndPlace(gltf.scene, slot);
         scene.add(group); slotGroups.push(group);

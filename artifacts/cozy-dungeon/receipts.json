@@ -1,0 +1,560 @@
+{
+  "pack": "cozy-dungeon",
+  "target": "game",
+  "budget": {
+    "version": "G1-Turbo",
+    "face_count": 60000,
+    "max_credits_per_asset": 40,
+    "max_retries": 1
+  },
+  "lux3d_style": "fantasy",
+  "assets": [
+    {
+      "pack": "cozy-dungeon",
+      "slot": "crate",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a sturdy wooden storage crate with dark iron corner brackets, clean simple silhouette, stylized low-poly game asset",
+          "task_id": 8397544,
+          "status": 3,
+          "seconds": 123.6,
+          "sha256": "490520a993ea60af54fca549cac74a6f4976e30cb04509d6278deb1908f8b4c6",
+          "bytes": 9711300,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 53788,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.45,
+                  0.4472,
+                  0.4495
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 53788,
+              "vertex_count": 39172,
+              "min": [
+                -0.22499999403953552,
+                -0.22360609471797943,
+                -0.22473888099193573
+              ],
+              "max": [
+                0.22499999403953552,
+                0.22360609471797943,
+                0.22473888099193573
+              ],
+              "dims": [
+                0.45,
+                0.4472,
+                0.4495
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8397544,
+        "sha256": "490520a993ea60af54fca549cac74a6f4976e30cb04509d6278deb1908f8b4c6",
+        "bytes": 9711300,
+        "face_count": 53788,
+        "has_texture": true,
+        "dims": [
+          0.45,
+          0.4472,
+          0.4495
+        ],
+        "seconds": 123.6
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068405
+    },
+    {
+      "pack": "cozy-dungeon",
+      "slot": "barrel",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "an oak barrel with dark metal hoops, smooth rounded body, stylized low-poly game asset",
+          "task_id": 8397545,
+          "status": 3,
+          "seconds": 115.5,
+          "sha256": "1d73bb6450ed2cb3e6d5e63d981fe047e89e0eddc72ef5c11bc29a3e1a9cd280",
+          "bytes": 11470844,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 49662,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.7127,
+                  0.75,
+                  0.7061
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 49662,
+              "vertex_count": 40926,
+              "min": [
+                -0.3563457131385803,
+                -0.375,
+                -0.3530542552471161
+              ],
+              "max": [
+                0.3563457131385803,
+                0.375,
+                0.3530542552471161
+              ],
+              "dims": [
+                0.7127,
+                0.75,
+                0.7061
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8397545,
+        "sha256": "1d73bb6450ed2cb3e6d5e63d981fe047e89e0eddc72ef5c11bc29a3e1a9cd280",
+        "bytes": 11470844,
+        "face_count": 49662,
+        "has_texture": true,
+        "dims": [
+          0.7127,
+          0.75,
+          0.7061
+        ],
+        "seconds": 115.5
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068405
+    },
+    {
+      "pack": "cozy-dungeon",
+      "slot": "brazier",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a round stone fire bowl on three short legs holding glowing coals, simple clean shape, stylized game asset",
+          "task_id": 8397547,
+          "status": 3,
+          "seconds": 175.0,
+          "sha256": "1ff8cb1dccabd9ce953fee4f3cafe43e622fce728fca7ddb3ae6e02df7270753",
+          "bytes": 11784424,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 57038,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.45,
+                  0.2862,
+                  0.45
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 57038,
+              "vertex_count": 48523,
+              "min": [
+                -0.22499999403953552,
+                -0.14310987293720245,
+                -0.22501496970653534
+              ],
+              "max": [
+                0.22499999403953552,
+                0.14310987293720245,
+                0.22501496970653534
+              ],
+              "dims": [
+                0.45,
+                0.2862,
+                0.45
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8397547,
+        "sha256": "1ff8cb1dccabd9ce953fee4f3cafe43e622fce728fca7ddb3ae6e02df7270753",
+        "bytes": 11784424,
+        "face_count": 57038,
+        "has_texture": true,
+        "dims": [
+          0.45,
+          0.2862,
+          0.45
+        ],
+        "seconds": 175.0
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068405
+    },
+    {
+      "pack": "cozy-dungeon",
+      "slot": "chest",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a treasure chest with a domed lid and wide brass bands, clean silhouette, stylized low-poly game asset",
+          "task_id": 8397811,
+          "status": 3,
+          "seconds": 163.7,
+          "sha256": "f7ea71ba12241c9c6cb1664b54f7582ecfa65406ba94d0c1900cc365d67df3a2",
+          "bytes": 11328304,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 53496,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.6,
+                  0.4848,
+                  0.4634
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 53496,
+              "vertex_count": 40649,
+              "min": [
+                -0.30000001192092896,
+                -0.24240528047084808,
+                -0.23169590532779694
+              ],
+              "max": [
+                0.30000001192092896,
+                0.24240528047084808,
+                0.23169590532779694
+              ],
+              "dims": [
+                0.6,
+                0.4848,
+                0.4634
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8397811,
+        "sha256": "f7ea71ba12241c9c6cb1664b54f7582ecfa65406ba94d0c1900cc365d67df3a2",
+        "bytes": 11328304,
+        "face_count": 53496,
+        "has_texture": true,
+        "dims": [
+          0.6,
+          0.4848,
+          0.4634
+        ],
+        "seconds": 163.7
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068405
+    },
+    {
+      "pack": "cozy-dungeon",
+      "slot": "lantern",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a hanging metal lantern with an open geometric frame, simple clean shapes, stylized game asset",
+          "task_id": 8397853,
+          "status": 3,
+          "seconds": 114.2,
+          "sha256": "759a54af6f35bb9118690b6ed2c8422358f4bb55d0d45759d828bdb3940d45aa",
+          "bytes": 13720700,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 74438,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.103,
+                  0.22,
+                  0.1119
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 74438,
+              "vertex_count": 62427,
+              "min": [
+                -0.051480066031217575,
+                -0.10999999940395355,
+                -0.05596599355340004
+              ],
+              "max": [
+                0.051480066031217575,
+                0.10999999940395355,
+                0.05596599355340004
+              ],
+              "dims": [
+                0.103,
+                0.22,
+                0.1119
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8397853,
+        "sha256": "759a54af6f35bb9118690b6ed2c8422358f4bb55d0d45759d828bdb3940d45aa",
+        "bytes": 13720700,
+        "face_count": 74438,
+        "has_texture": true,
+        "dims": [
+          0.103,
+          0.22,
+          0.1119
+        ],
+        "seconds": 114.2
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068405
+    },
+    {
+      "pack": "cozy-dungeon",
+      "slot": "golem",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a small friendly stone golem statue with a blocky rounded body, no facial detail, stylized low-poly game asset",
+          "task_id": 8397954,
+          "status": 3,
+          "seconds": 189.2,
+          "sha256": "3fde78b2469b72521b51050c303aa6a4ac66559b1ea365b12986e59a2f112c15",
+          "bytes": 9929652,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 52098,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  1.5037,
+                  1.5,
+                  0.7625
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 52098,
+              "vertex_count": 36091,
+              "min": [
+                -0.7518453001976013,
+                -0.75,
+                -0.3812423348426819
+              ],
+              "max": [
+                0.7518453001976013,
+                0.75,
+                0.3812423348426819
+              ],
+              "dims": [
+                1.5037,
+                1.5,
+                0.7625
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8397954,
+        "sha256": "3fde78b2469b72521b51050c303aa6a4ac66559b1ea365b12986e59a2f112c15",
+        "bytes": 9929652,
+        "face_count": 52098,
+        "has_texture": true,
+        "dims": [
+          1.5037,
+          1.5,
+          0.7625
+        ],
+        "seconds": 189.2
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068405
+    }
+  ],
+  "ts": 1795068405
+}

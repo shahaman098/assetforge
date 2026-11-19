@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><title>AssetForge — Project Report</title>
+<style>
+ body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color:#1d1a15;
+        margin:0; background:#fbf9f4; }
+ .page { max-width: 860px; margin: 0 auto; padding: 44px 56px; }
+ h1 { font-size: 30px; margin: 0 0 6px; }
+ .sub { color:#6b6153; font-size:13px; margin-bottom:26px; }
+ h2 { font-size: 19px; margin-top: 30px; border-bottom: 2px solid #e8e1d2;
+      padding-bottom: 5px; }
+ code { background:#efe9db; padding: 1px 5px; border-radius:3px; font-size: 12.5px; }
+ pre { background:#f4efe3; padding: 12px 14px; border-radius:6px; overflow:auto;
+       font-size: 12px; }
+ table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 13px; }
+ th { background:#2f2a22; color:#f5efe1; text-align:left; padding: 7px 10px; }
+ td { border-bottom: 1px solid #e2dbc9; padding: 6px 10px; }
+ tr:nth-child(even) td { background: #f5f0e4; }
+ .pass { color:#2e7d32; font-weight:600; } .fail { color:#b3402a; font-weight:600; }
+ .quote { border-left: 4px solid #c8a25a; padding: 8px 16px; background:#f6f1e6;
+          color:#5d5343; font-style: italic; margin: 14px 0; }
+ .note { font-size: 11.5px; color:#7a705f; }
+</style>
+</head><body><div class='page'><h1>AssetForge</h1><div class='sub'>One YAML in — a style-locked, machine-verified, engine-ready 3D asset pack out, with receipts. · TeamName · Manycore Aholo Global 3D AI Hackathon · #Manycorehackathon</div># AssetForge — Project Report (source; numbers rendered from receipts, never hand-typed)
+
+<p class='quote'>Render notes: every <code><RECEIPT-<i>></code> marker below is filled by</p>
+<p class='quote'><code>tools/render_report.py</code> from <code>artifacts/</i>/receipts.json</code> and</p>
+<p class='quote'><code>bench/benchmark.md</code> at build time. Convert to PDF as</p>
+<p class='quote'><code>TeamName-AssetForge.pdf</code>.</p>
+
+<h2>1. Idea → why this exists</h2>
+A solo dev who wants a game biome today opens the Lux3D console, burns credits
+one asset at a time, eyeballs every mesh, hand-fixes per-engine imports,
+retries blind — a week per biome, and nothing is provable afterwards.
+AssetForge collapses that into one YAML pack brief:
+plan → quote → generate (Lux3D) → deterministic gates → targeted repair →
+engine-ready delivery with receipts.
+
+<h2>2. What it is</h2>
+<li>- <b>CLI + library</b> (<code>af plan|build|verify|bench</code>) composing with the official</li>
+  Lux3D skill conventions and the official Python SDK.
+<li>- <b>Deterministic gates</b> (stdlib GLB parser + trimesh): face-count bounds</li>
+  (vendor 10k–300k), texture presence, sane bbox; watertight for print targets.
+<li>- <b>The Repairer</b>: one targeted prompt mutation per failed gate — the rule is</li>
+  readable code (<code>assetforge/mutate.py</code>), not a black box.
+<li>- <b>Receipts + offline Auditor</b>: per-asset JSON receipts (prompt, task ID,</li>
+  timings, gate values, sha256); <code>python verify.py</code> re-derives everything with
+  zero credits, no API key, no network.
+<li>- <b>Capability benchmark</b>: <code>bench/benchmark.md</code> measures Lux3D's own published</li>
+  boundary claims with N runs and a failure taxonomy.
+
+<h2>3. The demo (see video / runnable link)</h2>
+<li>1. <code>af build packs/cozy-dungeon.yaml</code> — plan, quote, fan-out, gates, repair,</li>
+   delivery on camera.
+<li>2. Relic Run — the playable proof: collect verified assets; receipt badges</li>
+   flip to PASS ✓.
+<li>3. <b>Pack-swap beat</b>: <code>sci-fi-outpost.yaml</code> re-themes the same level in one</li>
+   command.
+<li>4. <code>python verify.py</code> — every claim re-derives offline.</li>
+
+<h2>4. Results</h2>
+<p class='note'>Pack cozy-dungeon pending build.</p>
+<p class='note'>Pack sci-fi-outpost pending build.</p>
+<p class='note'>Benchmark pending — run <code>af bench</code>.</p>
+<RECEIPT-TOTALS: assets, credits, wall-clock, pass rates, repair-recovery count>
+
+<h2>5. Honest limits</h2>
+<RECEIPT-FAILURES: recorded failures + mutation reasons + published benchmark
+misses — failures are a feature of the receipts design>
+
+<h2>6. Where Lux3D is load-bearing</h2>
+Every delivered asset is a Lux3D task ID in our receipts; remove Lux3D and
+AssetForge has nothing to orchestrate, gate, or verify. We adopt the skill's
+plan→quote→REPORT conventions and the official SDK; we extend the ecosystem
+rather than reimplement it.
+
+<h2>7. The New Species case</h2>
+The organizer's own rationale — an ecosystem formed around toolchains,
+scenarios and developers — names exactly this layer: an installable toolchain,
+a measured capability map the whole platform can use, an open receipts format,
+and a game proving the loop end-to-end.
+
+<h2>8. 中文摘要</h2>
+一个 YAML 输入，产出风格一致、通过确定性质检、可直接进引擎的 3D 资产包。
+流水线采用 Lux3D 官方 SDK 与 plan→quote→REPORT 约定；所有产出附回执，
+可离线零积分复验（<code>python verify.py</code>）；<code>bench/</code> 用实测数据量化 Lux3D
+官方能力边界并公开失败分类学——工具链、场景与开发者生态，即本次
+「3D AI 新物种奖」所指的生态层。
+</div></body></html>

@@ -1,0 +1,43 @@
+{"ts": 1795067856, "action": "create", "task_id": 8397194, "prompt": "a small wooden crate, simple game asset", "version": "G1-Turbo", "style": "", "face_count": 10000}
+{"ts": 1795067987, "action": "wait", "task_id": 8397194, "status": 3, "seconds": 130.6}
+{"ts": 1795067992, "action": "download", "task_id": 8397194, "files": [["artifacts/probe/probe.glb", "downloaded"]]}
+{"ts": 1795068043, "action": "create", "task_id": 8397544, "prompt": "a sturdy wooden storage crate with dark iron corner brackets, clean simple silhouette, stylized low-poly game asset", "version": "G1-Turbo", "style": "fantasy", "face_count": 60000}
+{"ts": 1795068043, "action": "create", "task_id": 8397545, "prompt": "an oak barrel with dark metal hoops, smooth rounded body, stylized low-poly game asset", "version": "G1-Turbo", "style": "fantasy", "face_count": 60000}
+{"ts": 1795068043, "action": "create", "task_id": 8397547, "prompt": "a round stone fire bowl on three short legs holding glowing coals, simple clean shape, stylized game asset", "version": "G1-Turbo", "style": "fantasy", "face_count": 60000}
+{"ts": 1795068148, "action": "wait", "task_id": 8397545, "status": 3, "seconds": 105.1}
+{"ts": 1795068157, "action": "download", "task_id": 8397545, "files": [["artifacts/cozy-dungeon/downloads/try0/barrel.glb", "downloaded"]]}
+{"ts": 1795068158, "action": "create", "task_id": 8397811, "prompt": "a treasure chest with a domed lid and wide brass bands, clean silhouette, stylized low-poly game asset", "version": "G1-Turbo", "style": "fantasy", "face_count": 60000}
+{"ts": 1795068159, "action": "wait", "task_id": 8397544, "status": 3, "seconds": 116.8}
+{"ts": 1795068165, "action": "download", "task_id": 8397544, "files": [["artifacts/cozy-dungeon/downloads/try0/crate.glb", "downloaded"]]}
+{"ts": 1795068166, "action": "create", "task_id": 8397853, "prompt": "a hanging metal lantern with an open geometric frame, simple clean shapes, stylized game asset", "version": "G1-Turbo", "style": "fantasy", "face_count": 60000}
+{"ts": 1795068185, "action": "wait", "task_id": 8397547, "status": 3, "seconds": 142.4}
+{"ts": 1795068216, "action": "download", "task_id": 8397547, "files": [["artifacts/cozy-dungeon/downloads/try0/brazier.glb", "downloaded"]]}
+{"ts": 1795068218, "action": "create", "task_id": 8397954, "prompt": "a small friendly stone golem statue with a blocky rounded body, no facial detail, stylized low-poly game asset", "version": "G1-Turbo", "style": "fantasy", "face_count": 60000}
+{"ts": 1795068270, "action": "wait", "task_id": 8397853, "status": 3, "seconds": 104.4}
+{"ts": 1795068279, "action": "download", "task_id": 8397853, "files": [["artifacts/cozy-dungeon/downloads/try0/lantern.glb", "downloaded"]]}
+{"ts": 1795068310, "action": "wait", "task_id": 8397811, "status": 3, "seconds": 151.5}
+{"ts": 1795068320, "action": "download", "task_id": 8397811, "files": [["artifacts/cozy-dungeon/downloads/try0/chest.glb", "downloaded"]]}
+{"ts": 1795068348, "action": "wait", "task_id": 8397954, "status": 3, "seconds": 130.5}
+{"ts": 1795068405, "action": "download", "task_id": 8397954, "files": [["artifacts/cozy-dungeon/downloads/try0/golem.glb", "downloaded"]]}
+{"ts": 1795068407, "action": "create", "task_id": 8398353, "prompt": "a sealed metal cargo crate with recessed handles and rounded edges, clean simple silhouette, stylized low-poly sci-fi game asset", "version": "G1-Turbo", "style": "cyberpunk", "face_count": 60000}
+{"ts": 1795068407, "action": "create", "task_id": 8398354, "prompt": "a compact fusion power core pedestal with a glowing ring, simple clean shape, stylized sci-fi game asset", "version": "G1-Turbo", "style": "cyberpunk", "face_count": 60000}
+{"ts": 1795068407, "action": "create", "task_id": 8398355, "prompt": "a cylindrical fuel canister with a flat top and wide base band, smooth rounded body, stylized low-poly sci-fi game asset", "version": "G1-Turbo", "style": "cyberpunk", "face_count": 60000}
+{"ts": 1795068537, "action": "wait", "task_id": 8398353, "status": 3, "seconds": 130.1}
+{"ts": 1795068538, "action": "wait", "task_id": 8398355, "status": 3, "seconds": 130.7}
+{"ts": 1795068543, "action": "download", "task_id": 8398355, "files": [["artifacts/sci-fi-outpost/downloads/try0/barrel.glb", "downloaded"]]}
+{"ts": 1795068545, "action": "create", "task_id": 8398637, "prompt": "a reinforced equipment cache with a hatched dome lid and wide straps, clean silhouette, stylized low-poly sci-fi game asset", "version": "G1-Turbo", "style": "cyberpunk", "face_count": 60000}
+{"ts": 1795068548, "action": "download", "task_id": 8398353, "files": [["artifacts/sci-fi-outpost/downloads/try0/crate.glb", "downloaded"]]}
+{"ts": 1795068549, "action": "create", "task_id": 8398650, "prompt": "a tripod survey beacon with a glowing top emitter, simple geometric frame, stylized sci-fi game asset", "version": "G1-Turbo", "style": "cyberpunk", "face_count": 60000}
+{"ts": 1795068688, "action": "wait", "task_id": 8398637, "status": 3, "seconds": 143.5}
+{"ts": 1795068700, "action": "download", "task_id": 8398637, "files": [["artifacts/sci-fi-outpost/downloads/try0/chest.glb", "downloaded"]]}
+{"ts": 1795068701, "action": "create", "task_id": 8398916, "prompt": "a small patroller drone robot with a blocky rounded chassis, no facial detail, stylized low-poly sci-fi game asset", "version": "G1-Turbo", "style": "cyberpunk", "face_count": 60000}
+{"ts": 1795068702, "action": "wait", "task_id": 8398650, "status": 3, "seconds": 152.9}
+{"ts": 1795068766, "action": "download", "task_id": 8398650, "files": [["artifacts/sci-fi-outpost/downloads/try0/lantern.glb", "downloaded"]]}
+{"ts": 1795068832, "action": "wait", "task_id": 8398354, "status": 3, "seconds": 425.1}
+{"ts": 1795068844, "action": "download", "task_id": 8398354, "files": [["artifacts/sci-fi-outpost/downloads/try0/brazier.glb", "downloaded"]]}
+{"ts": 1795068858, "action": "wait", "task_id": 8398916, "status": 3, "seconds": 156.7}
+{"ts": 1795068863, "action": "download", "task_id": 8398916, "files": [["artifacts/sci-fi-outpost/downloads/try0/golem.glb", "downloaded"]]}
+{"ts": 1795070998, "action": "create", "task_id": 8402781, "prompt": "a stone garden bench with two solid legs, clean silhouette", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795070998, "action": "create", "task_id": 8402783, "prompt": "a ceramic vase with a smooth rounded body and narrow neck", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795070998, "action": "create", "task_id": 8402782, "prompt": "a leather-bound rectangular storage box with brass corners", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071102, "action": "wait", "task_id": 8402781, "status": 3, "seconds": 104.3}

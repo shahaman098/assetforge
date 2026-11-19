@@ -1,13 +1,119 @@
 {
   "name": "cozy-dungeon",
   "style": "fantasy",
-  "theme": { "fog": "#241c12", "floor": "#5a4a33", "accent": "#ffb45e" },
+  "theme": {
+    "fog": "#241c12",
+    "floor": "#5a4a33",
+    "accent": "#ffb45e"
+  },
   "slots": [
-    { "slot": "crate",   "file": "/artifacts/cozy-dungeon/glbs/crate.glb",   "position": [-2.2, 0, -1.0], "rotation": [0, 35, 0],  "fit": 1.2, "sha256": "d3m0craterecei", "task_id": 0 },
-    { "slot": "barrel", "file": "/artifacts/cozy-dungeon/glbs/barrel.glb", "position": [1.8, 0, -1.4], "rotation": [0, -15, 0], "fit": 1.2, "sha256": "d3m0barrelrecei", "task_id": 0 },
-    { "slot": "brazier", "file": "/artifacts/cozy-dungeon/glbs/brazier.glb", "position": [0, 0, 0.2],  "rotation": [0, 0, 0],   "fit": 1.2, "sha256": "d3m0brazierrece", "task_id": 0 },
-    { "slot": "chest",  "file": "/artifacts/cozy-dungeon/glbs/chest.glb",  "position": [-1.6, 0, 1.6], "rotation": [0, 70, 0],  "fit": 1.2, "sha256": "d3m0chestreceip", "task_id": 0 },
-    { "slot": "lantern", "file": "/artifacts/cozy-dungeon/glbs/lantern.glb", "position": [2.4, 0, 1.2], "rotation": [0, 10, 0],  "fit": 1.2, "sha256": "d3m0lanternrece", "task_id": 0 },
-    { "slot": "golem",  "file": "/artifacts/cozy-dungeon/glbs/golem.glb",  "position": [0.4, 0, -2.4], "rotation": [0, 160, 0], "fit": 1.2, "sha256": "d3m0golemreceip", "task_id": 0 }
+    {
+      "slot": "crate",
+      "file": "/artifacts/cozy-dungeon/glbs/crate.glb",
+      "position": [
+        -2.2,
+        0.0,
+        -1.0
+      ],
+      "rotation": [
+        0.0,
+        35.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "490520a993ea",
+      "task_id": 8397544,
+      "gates": "passed"
+    },
+    {
+      "slot": "barrel",
+      "file": "/artifacts/cozy-dungeon/glbs/barrel.glb",
+      "position": [
+        1.8,
+        0.0,
+        -1.4
+      ],
+      "rotation": [
+        0.0,
+        -15.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "1d73bb6450ed",
+      "task_id": 8397545,
+      "gates": "passed"
+    },
+    {
+      "slot": "brazier",
+      "file": "/artifacts/cozy-dungeon/glbs/brazier.glb",
+      "position": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "1ff8cb1dccab",
+      "task_id": 8397547,
+      "gates": "passed"
+    },
+    {
+      "slot": "chest",
+      "file": "/artifacts/cozy-dungeon/glbs/chest.glb",
+      "position": [
+        -1.6,
+        0.0,
+        1.6
+      ],
+      "rotation": [
+        0.0,
+        70.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "f7ea71ba1224",
+      "task_id": 8397811,
+      "gates": "passed"
+    },
+    {
+      "slot": "lantern",
+      "file": "/artifacts/cozy-dungeon/glbs/lantern.glb",
+      "position": [
+        2.4,
+        0.0,
+        1.2
+      ],
+      "rotation": [
+        0.0,
+        10.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "759a54af6f35",
+      "task_id": 8397853,
+      "gates": "passed"
+    },
+    {
+      "slot": "golem",
+      "file": "/artifacts/cozy-dungeon/glbs/golem.glb",
+      "position": [
+        0.4,
+        0.0,
+        -2.4
+      ],
+      "rotation": [
+        0.0,
+        160.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "3fde78b2469b",
+      "task_id": 8397954,
+      "gates": "passed"
+    }
   ]
 }

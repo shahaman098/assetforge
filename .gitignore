@@ -6,3 +6,4 @@ artifacts/*/downloads/
 artifacts/bench/downloads/
 artifacts/probe/
 tests/fixtures/*.glb
+.aholo_key

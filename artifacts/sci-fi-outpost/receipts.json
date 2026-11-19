@@ -1,0 +1,560 @@
+{
+  "pack": "sci-fi-outpost",
+  "target": "game",
+  "budget": {
+    "version": "G1-Turbo",
+    "face_count": 60000,
+    "max_credits_per_asset": 40,
+    "max_retries": 1
+  },
+  "lux3d_style": "cyberpunk",
+  "assets": [
+    {
+      "pack": "sci-fi-outpost",
+      "slot": "crate",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a sealed metal cargo crate with recessed handles and rounded edges, clean simple silhouette, stylized low-poly sci-fi game asset",
+          "task_id": 8398353,
+          "status": 3,
+          "seconds": 142.7,
+          "sha256": "da27bc872236e11da13e4dbaf48f09d4d0292cea155d7b48d693152bb3d69627",
+          "bytes": 12117364,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 51292,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.45,
+                  0.3422,
+                  0.3362
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 51292,
+              "vertex_count": 36577,
+              "min": [
+                -0.22499999403953552,
+                -0.1711048036813736,
+                -0.1680944561958313
+              ],
+              "max": [
+                0.22499999403953552,
+                0.1711048036813736,
+                0.1680944561958313
+              ],
+              "dims": [
+                0.45,
+                0.3422,
+                0.3362
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8398353,
+        "sha256": "da27bc872236e11da13e4dbaf48f09d4d0292cea155d7b48d693152bb3d69627",
+        "bytes": 12117364,
+        "face_count": 51292,
+        "has_texture": true,
+        "dims": [
+          0.45,
+          0.3422,
+          0.3362
+        ],
+        "seconds": 142.7
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068863
+    },
+    {
+      "pack": "sci-fi-outpost",
+      "slot": "barrel",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a cylindrical fuel canister with a flat top and wide base band, smooth rounded body, stylized low-poly sci-fi game asset",
+          "task_id": 8398355,
+          "status": 3,
+          "seconds": 137.7,
+          "sha256": "168c98b4915542383e25ad5c530f44f6045bd5ee9ca2391217802336171273a8",
+          "bytes": 11461156,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 53244,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.2991,
+                  0.55,
+                  0.3011
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 53244,
+              "vertex_count": 35175,
+              "min": [
+                -0.14952537417411804,
+                -0.2750000059604645,
+                -0.1505630910396576
+              ],
+              "max": [
+                0.14952537417411804,
+                0.2750000059604645,
+                0.1505630910396576
+              ],
+              "dims": [
+                0.2991,
+                0.55,
+                0.3011
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8398355,
+        "sha256": "168c98b4915542383e25ad5c530f44f6045bd5ee9ca2391217802336171273a8",
+        "bytes": 11461156,
+        "face_count": 53244,
+        "has_texture": true,
+        "dims": [
+          0.2991,
+          0.55,
+          0.3011
+        ],
+        "seconds": 137.7
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068863
+    },
+    {
+      "pack": "sci-fi-outpost",
+      "slot": "brazier",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a compact fusion power core pedestal with a glowing ring, simple clean shape, stylized sci-fi game asset",
+          "task_id": 8398354,
+          "status": 3,
+          "seconds": 438.2,
+          "sha256": "216f26fde10ffdcbc5bece46a7551dd7e28aef2e3965af701fd97ec85b53c4d9",
+          "bytes": 12626120,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 52314,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.4394,
+                  0.62,
+                  0.4542
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 52314,
+              "vertex_count": 44184,
+              "min": [
+                -0.21967767179012299,
+                -0.3100000023841858,
+                -0.2270800620317459
+              ],
+              "max": [
+                0.21967767179012299,
+                0.3100000023841858,
+                0.2270800620317459
+              ],
+              "dims": [
+                0.4394,
+                0.62,
+                0.4542
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8398354,
+        "sha256": "216f26fde10ffdcbc5bece46a7551dd7e28aef2e3965af701fd97ec85b53c4d9",
+        "bytes": 12626120,
+        "face_count": 52314,
+        "has_texture": true,
+        "dims": [
+          0.4394,
+          0.62,
+          0.4542
+        ],
+        "seconds": 438.2
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068863
+    },
+    {
+      "pack": "sci-fi-outpost",
+      "slot": "chest",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a reinforced equipment cache with a hatched dome lid and wide straps, clean silhouette, stylized low-poly sci-fi game asset",
+          "task_id": 8398637,
+          "status": 3,
+          "seconds": 156.8,
+          "sha256": "9f13c4e03652982bd05182ca249d1818758db70d06731ca486c8af588cd27094",
+          "bytes": 13022356,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 56438,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.3985,
+                  0.4,
+                  0.4077
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 56438,
+              "vertex_count": 48661,
+              "min": [
+                -0.1992460936307907,
+                -0.20000000298023224,
+                -0.2038443386554718
+              ],
+              "max": [
+                0.1992460936307907,
+                0.20000000298023224,
+                0.2038443386554718
+              ],
+              "dims": [
+                0.3985,
+                0.4,
+                0.4077
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8398637,
+        "sha256": "9f13c4e03652982bd05182ca249d1818758db70d06731ca486c8af588cd27094",
+        "bytes": 13022356,
+        "face_count": 56438,
+        "has_texture": true,
+        "dims": [
+          0.3985,
+          0.4,
+          0.4077
+        ],
+        "seconds": 156.8
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068863
+    },
+    {
+      "pack": "sci-fi-outpost",
+      "slot": "lantern",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a tripod survey beacon with a glowing top emitter, simple geometric frame, stylized sci-fi game asset",
+          "task_id": 8398650,
+          "status": 3,
+          "seconds": 217.7,
+          "sha256": "a8db48114091919ab60bab920dc814a8fb8a6cdada9672f9523799c4da9fe6a5",
+          "bytes": 12816200,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 68174,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  1.8064,
+                  1.8,
+                  1.6901
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 68174,
+              "vertex_count": 55910,
+              "min": [
+                -0.9031992554664612,
+                -0.8999999761581421,
+                -0.8450644016265869
+              ],
+              "max": [
+                0.9031992554664612,
+                0.8999999761581421,
+                0.8450644016265869
+              ],
+              "dims": [
+                1.8064,
+                1.8,
+                1.6901
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8398650,
+        "sha256": "a8db48114091919ab60bab920dc814a8fb8a6cdada9672f9523799c4da9fe6a5",
+        "bytes": 12816200,
+        "face_count": 68174,
+        "has_texture": true,
+        "dims": [
+          1.8064,
+          1.8,
+          1.6901
+        ],
+        "seconds": 217.7
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068863
+    },
+    {
+      "pack": "sci-fi-outpost",
+      "slot": "golem",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a small patroller drone robot with a blocky rounded chassis, no facial detail, stylized low-poly sci-fi game asset",
+          "task_id": 8398916,
+          "status": 3,
+          "seconds": 162.5,
+          "sha256": "304f10a69871b5d9feabd5cbaf4b9a3aefcafc1c155c8dfca3560b41b1abc3b2",
+          "bytes": 11724112,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 54168,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.3,
+                  0.2471,
+                  0.2487
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 54168,
+              "vertex_count": 44692,
+              "min": [
+                -0.15000000596046448,
+                -0.12354235351085663,
+                -0.12436124682426453
+              ],
+              "max": [
+                0.15000000596046448,
+                0.12354235351085663,
+                0.12436124682426453
+              ],
+              "dims": [
+                0.3,
+                0.2471,
+                0.2487
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8398916,
+        "sha256": "304f10a69871b5d9feabd5cbaf4b9a3aefcafc1c155c8dfca3560b41b1abc3b2",
+        "bytes": 11724112,
+        "face_count": 54168,
+        "has_texture": true,
+        "dims": [
+          0.3,
+          0.2471,
+          0.2487
+        ],
+        "seconds": 162.5
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795068863
+    }
+  ],
+  "ts": 1795068863
+}
