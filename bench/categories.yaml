@@ -1,0 +1,52 @@
+# Lux3D capability-boundary benchmark categories.
+# Taxonomy mirrors the vendor's own published boundary table (Participant
+# Handbook, as of 2026-08-22). Expectations are the VENDOR's claims; the
+# sweep measures them with receipts.
+
+categories:
+  - name: strength-baseline
+    vendor_claim: strong — clear-contour objects, major materials
+    expectation: high
+    prompts:
+      - "a stone garden bench with two solid legs, clean silhouette"
+      - "a leather-bound rectangular storage box with brass corners"
+      - "a ceramic vase with a smooth rounded body and narrow neck"
+      - "a simple three-legged wooden stool"
+      - "a metal cooking pot with two short handles"
+      - "a round stone well ring with a thick rim"
+
+  - name: patterns-and-text
+    vendor_claim: large patterns stable; small readable text fails
+    expectation: mixed
+    prompts:
+      - "a ceramic mug with one large bold painted stripe pattern"
+      - "a wooden crate lid with one large simple painted symbol"
+      - "a book with a small readable title printed on the spine"
+      - "a bottle with a small printed paper label with fine lines"
+
+  - name: geometric-complexity
+    vendor_claim: intricate carvings / many interspersed parts unstable
+    expectation: low
+    prompts:
+      - "a simple wooden chair with four straight legs and a flat back"
+      - "an ornate carved throne with intricate relief patterns on every surface"
+      - "a chandelier with many thin intertwined metal branches"
+      - "a wooden shelf bracket with clean straight supports"
+
+  - name: materials-hard
+    vendor_claim: plush fabrics and transparent materials unstable
+    expectation: low
+    prompts:
+      - "a brushed steel toolbox with a simple handle"
+      - "a clear transparent glass drinking cup"
+      - "a plush stuffed bear with long soft fabric fur"
+      - "a matte ceramic planter pot with a wide rim"
+
+  - name: figures-and-plants
+    vendor_claim: faces and dense foliage unstable
+    expectation: low
+    prompts:
+      - "a simple wooden mannequin figure with no facial details"
+      - "a human bust with detailed expressive facial features"
+      - "a potted cactus with thick smooth leaves"
+      - "a dense leafy fern with many thin branching leaves"

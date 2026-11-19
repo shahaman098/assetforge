@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+artifacts/*/downloads/
+artifacts/bench/downloads/
+artifacts/probe/
+tests/fixtures/*.glb

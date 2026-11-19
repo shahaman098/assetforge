@@ -1,0 +1,44 @@
+name: cozy-dungeon
+target: game
+engine: threejs
+version_note: G1-Turbo drafts, G1 finals only if budget allows
+style:
+  palette: warm candlelit stone, aged oak, brass accents
+  materials: [stone, aged wood, leather, brass]
+  avoid: [small text, fine carvings, transparent materials, plush fabric, faces]
+  mood: warm, hand-crafted, clean silhouettes
+  lux3d_style: fantasy
+  theme:
+    fog: "#241c12"
+    floor: "#5a4a33"
+    accent: "#ffb45e"
+budget:
+  version: G1-Turbo
+  face_count: 60000
+  max_credits_per_asset: 40
+  max_retries: 1
+slots:
+  - slot: crate
+    position: [-2.2, 0, -1.0]
+    rotation: [0, 35, 0]
+    prompt: "a sturdy wooden storage crate with dark iron corner brackets, clean simple silhouette, stylized low-poly game asset"
+  - slot: barrel
+    position: [1.8, 0, -1.4]
+    rotation: [0, -15, 0]
+    prompt: "an oak barrel with dark metal hoops, smooth rounded body, stylized low-poly game asset"
+  - slot: brazier
+    position: [0, 0, 0.2]
+    rotation: [0, 0, 0]
+    prompt: "a round stone fire bowl on three short legs holding glowing coals, simple clean shape, stylized game asset"
+  - slot: chest
+    position: [-1.6, 0, 1.6]
+    rotation: [0, 70, 0]
+    prompt: "a treasure chest with a domed lid and wide brass bands, clean silhouette, stylized low-poly game asset"
+  - slot: lantern
+    position: [2.4, 0, 1.2]
+    rotation: [0, 10, 0]
+    prompt: "a hanging metal lantern with an open geometric frame, simple clean shapes, stylized game asset"
+  - slot: golem
+    position: [0.4, 0, -2.4]
+    rotation: [0, 160, 0]
+    prompt: "a small friendly stone golem statue with a blocky rounded body, no facial detail, stylized low-poly game asset"

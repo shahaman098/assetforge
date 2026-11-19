@@ -1,0 +1,44 @@
+name: sci-fi-outpost
+target: game
+engine: threejs
+version_note: G1-Turbo drafts, G1 finals only if budget allows
+style:
+  palette: cool industrial metal, matte graphite, cyan glow accents
+  materials: [brushed steel, matte polymer, ceramic, dark rubber]
+  avoid: [small text, fine carvings, transparent materials, plush fabric, faces]
+  mood: utilitarian, modular, clean silhouettes
+  lux3d_style: cyberpunk
+  theme:
+    fog: "#0b1118"
+    floor: "#26313b"
+    accent: "#4fd8ff"
+budget:
+  version: G1-Turbo
+  face_count: 60000
+  max_credits_per_asset: 40
+  max_retries: 1
+slots:
+  - slot: crate
+    position: [-2.2, 0, -1.0]
+    rotation: [0, 35, 0]
+    prompt: "a sealed metal cargo crate with recessed handles and rounded edges, clean simple silhouette, stylized low-poly sci-fi game asset"
+  - slot: barrel
+    position: [1.8, 0, -1.4]
+    rotation: [0, -15, 0]
+    prompt: "a cylindrical fuel canister with a flat top and wide base band, smooth rounded body, stylized low-poly sci-fi game asset"
+  - slot: brazier
+    position: [0, 0, 0.2]
+    rotation: [0, 0, 0]
+    prompt: "a compact fusion power core pedestal with a glowing ring, simple clean shape, stylized sci-fi game asset"
+  - slot: chest
+    position: [-1.6, 0, 1.6]
+    rotation: [0, 70, 0]
+    prompt: "a reinforced equipment cache with a hatched dome lid and wide straps, clean silhouette, stylized low-poly sci-fi game asset"
+  - slot: lantern
+    position: [2.4, 0, 1.2]
+    rotation: [0, 10, 0]
+    prompt: "a tripod survey beacon with a glowing top emitter, simple geometric frame, stylized sci-fi game asset"
+  - slot: golem
+    position: [0.4, 0, -2.4]
+    rotation: [0, 160, 0]
+    prompt: "a small patroller drone robot with a blocky rounded chassis, no facial detail, stylized low-poly sci-fi game asset"
