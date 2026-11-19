@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# AssetForge CLI wrapper — uses the repo venv.
+# AssetForge CLI wrapper — uses the repo venv when present, else system python3.
 set -euo pipefail
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-exec "$DIR/.venv/bin/python" -m assetforge.cli "$@"
+PY="$DIR/.venv/bin/python"
+if [ ! -x "$PY" ]; then PY="$(command -v python3)"; fi
+exec "$PY" -m assetforge.cli "$@"

@@ -1,0 +1,34 @@
+# Contributed recipe: printable desk-mini set (print target)
+# Demonstrates the print gate path: watertight + sane bbox + texture checks.
+# Print targets exercise the trimesh watertight gate when trimesh is installed.
+# Usage: af build recipes/printable-mini.yaml
+name: printable-mini
+target: print
+engine: any
+style:
+  palette: chunky desk-friendly toys, bold single-material look
+  materials: [ceramic, matte polymer]
+  avoid: [small text, thin protrusions, transparent materials, faces]
+  lux3d_style: cartoon
+  theme:
+    fog: "#14141a"
+    floor: "#2a2a30"
+    accent: "#ffb45e"
+budget:
+  version: G1-Turbo
+  face_count: 40000          # printable minis need fewer, larger faces
+  max_credits_per_asset: 40
+  max_retries: 1
+slots:
+  - slot: tortoise
+    position: [0, 0, 0]
+    rotation: [0, 0, 0]
+    prompt: "a chunky tortoise with a smooth rounded shell, thick legs, simple clean shapes, solid single-material look, stylized desk toy"
+  - slot: whale
+    position: [0, 0, 0]
+    rotation: [0, 0, 0]
+    prompt: "a rounded chunky whale with a tall tail fin, smooth body, simple clean shapes, solid single-material look, stylized desk toy"
+  - slot: mushroom-house
+    position: [0, 0, 0]
+    rotation: [0, 0, 0]
+    prompt: "a chunky mushroom house with a domed cap and a small round door, smooth simple shapes, solid single-material look, stylized desk toy"

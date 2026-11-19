@@ -12,8 +12,8 @@ const app = document.getElementById('app');
 const hudCenter = document.getElementById('hud-center');
 const toast = document.getElementById('toast');
 const receiptsEl = document.getElementById('receipts');
-const counterN = document.getElementById('n');
-const counterTotal = document.getElementById('total');
+let counterN = document.getElementById('n');
+let counterTotal = document.getElementById('total');
 const loadingEl = document.getElementById('loading');
 const errorEl = document.getElementById('error');
 
@@ -127,6 +127,7 @@ function loadPack(name, { announce } = {}) {
     return r.json();
   }).then(manifest => {
     clearSlots();
+    packLoadedAt = performance.now();
     currentPack = manifest.name;
     setTheme(manifest.theme);
     document.querySelectorAll('#packbar button').forEach(b =>
@@ -146,6 +147,10 @@ function loadPack(name, { announce } = {}) {
         const group = fitAndPlace(gltf.scene, slot);
         scene.add(group); slotGroups.push(group);
         loaded += 1;
+        const span = loadingEl.querySelector('span');
+        if (span && loaded < manifest.slots.length) {
+          span.innerHTML = `<span class="spin">◌</span>LOADING PACK… ${loaded}/${manifest.slots.length}`;
+        }
         if (loaded === manifest.slots.length) {
           loadingEl.style.display = 'none';
           if (announce) showCenter(`PACK: ${manifest.name}.yaml — ${loaded} verified assets`, 2200);
@@ -168,6 +173,27 @@ function loadPack(name, { announce } = {}) {
 document.getElementById('btn-cozy-dungeon').onclick = () => loadPack('cozy-dungeon', { announce: true });
 document.getElementById('btn-sci-fi-outpost').onclick = () => loadPack('sci-fi-outpost', { announce: true });
 
+function collectGroup(g) {
+  const { slot, sha } = g.userData;
+  collected.add(slot);
+  const start = performance.now();
+  const shrink = () => {
+    const t = Math.min(1, (performance.now() - start) / 350);
+    g.scale.setScalar(Math.max(0.0001, 1 - t));
+    g.position.y = t * 1.4;
+    if (t < 1) requestAnimationFrame(shrink); else scene.remove(g);
+  };
+  shrink();
+  counterN.textContent = collected.size;
+  const row = document.getElementById('rr-' + slot);
+  if (row) { const b = row.querySelector('.badge'); b.textContent = 'PASS ✓'; b.classList.remove('pending'); }
+  showToast(`${slot} — receipt ${sha || '—'} re-verified offline ✓`);
+  if (collected.size === parseInt(counterTotal.textContent, 10)) {
+    showCenter(`PACK VERIFIED — all ${collected.size} relics machine-checked ✓ swap the pack ↑`, 4200);
+    showStamp();
+  }
+}
+
 addEventListener('pointerdown', e => {
   pointer.x = (e.clientX / innerWidth) * 2 - 1;
   pointer.y = -(e.clientY / innerHeight) * 2 + 1;
@@ -177,24 +203,7 @@ addEventListener('pointerdown', e => {
   let obj = hits[0].object;
   while (obj && !obj.userData.slot) obj = obj.parent;
   if (!obj || collected.has(obj.userData.slot)) return;
-  collected.add(obj.userData.slot);
-  const { slot, sha } = obj.userData;
-  // collect animation
-  const start = performance.now();
-  const shrink = () => {
-    const t = Math.min(1, (performance.now() - start) / 350);
-    obj.scale.setScalar(Math.max(0.0001, 1 - t));
-    obj.position.y = t * 1.4;
-    if (t < 1) requestAnimationFrame(shrink); else scene.remove(obj);
-  };
-  shrink();
-  counterN.textContent = collected.size;
-  const row = document.getElementById('rr-' + slot);
-  if (row) { const b = row.querySelector('.badge'); b.textContent = 'PASS ✓'; b.classList.remove('pending'); }
-  showToast(`${slot} — receipt ${sha || '—'} re-verified offline ✓`);
-  if (collected.size === parseInt(counterTotal.textContent, 10)) {
-    showCenter(`PACK VERIFIED — all ${collected.size} relics machine-checked ✓ swap the pack ↑`, 4200);
-  }
+  collectGroup(obj);
 });
 
 addEventListener('resize', () => {
@@ -204,6 +213,22 @@ addEventListener('resize', () => {
 });
 
 const clock = new THREE.Clock();
+let packLoadedAt = performance.now();
+function fmtTime(ms) {
+  const s = Math.floor(ms / 1000);
+  return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+}
+function showStamp() {
+  const stamp = document.createElement('div');
+  stamp.textContent = 'PACK CERTIFIED';
+  stamp.style.cssText = 'position:fixed;top:38%;left:50%;transform:translate(-50%,-50%) rotate(-7deg);' +
+    'border:4px solid var(--accent);color:var(--accent);padding:10px 26px;font:700 34px/1.2 ui-monospace,' +
+    'Menlo,monospace;letter-spacing:.12em;border-radius:6px;opacity:0;transition:opacity .3s;z-index:15;' +
+    'text-shadow:0 0 18px rgba(0,0,0,.6)';
+  document.body.appendChild(stamp);
+  requestAnimationFrame(() => { stamp.style.opacity = '1'; });
+  setTimeout(() => { stamp.style.opacity = '0'; setTimeout(() => stamp.remove(), 400); }, 5200);
+}
 function animate() {
   requestAnimationFrame(animate);
   const t = clock.getElapsedTime();
@@ -212,6 +237,11 @@ function animate() {
     g.position.y = 0.04 * Math.sin(t * 1.6 + g.userData.phase); // gentle relic float
     g.rotation.y += 0.0015;
   });
+  const total = parseInt(counterTotal.textContent, 10) || 0;
+  if (total > 0 && collected.size < total) {
+    counterN.parentElement.innerHTML = `relics <b id="n">${collected.size}</b>/<span id="total">${total}</span> · ${fmtTime(performance.now() - packLoadedAt)}`;
+    counterN = document.getElementById('n'); counterTotal = document.getElementById('total');
+  }
   controls.update();
   renderer.render(scene, camera);
 }
@@ -238,6 +268,11 @@ window.__AF = {
       clientY: c.top + (1 - v.y) / 2 * c.height,
       bubbles: true });
     document.querySelector('canvas').dispatchEvent(ev);
+  },
+  collectSlot: (name) => {
+    const g = slotGroups.find(x => x.userData.slot === name);
+    if (g && !collected.has(name)) { collectGroup(g); return true; }
+    return false;
   },
   renderer
 };

@@ -57,6 +57,20 @@ receipts, and call the model through the official
 `manycore-aholo-sdk-lux3d`. We are a skill-shaped layer on their stack, not a
 reimplementation.
 
+## Ecosystem artifacts (take them, they're yours)
+
+- **[RECEIPTS-SPEC.md](RECEIPTS-SPEC.md)** — the open receipts format any
+  AI-3D tool can emit and any reviewer can verify offline.
+- **[recipes/](recipes/)** — contributed pack briefs (`shop-stall` game pack,
+  `printable-mini` print-gate pack). The community contribution format:
+  a recipe is just a YAML.
+- **[SKILL.md](SKILL.md) / [AGENTS.md](AGENTS.md)** — installable as a local
+  Skill in Lux3D-compatible hosts, alongside the official skill.
+- **[bench/benchmark.md](bench/benchmark.md)** — 22 measured G1-Turbo runs
+  across Lux3D's own published boundary categories: the coarse production
+  gates passed everywhere, including every vendor-documented weak zone.
+  Per-run task IDs in `artifacts/bench/results.json`.
+
 ## 中文摘要 (Chinese summary)
 
 AssetForge 是 Aholo Lux3D 与可交付游戏资产之间的生产层：一个 YAML

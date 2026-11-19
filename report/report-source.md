@@ -1,9 +1,8 @@
-# AssetForge — Project Report (source; numbers rendered from receipts, never hand-typed)
+# AssetForge — Project Report
 
-> Render notes: every `<RECEIPT-*>` marker below is filled by
-> `tools/render_report.py` from `artifacts/*/receipts.json` and
-> `bench/benchmark.md` at build time. Convert to PDF as
-> `TeamName-AssetForge.pdf`.
+> Every table and number in this report is rendered from `artifacts/*/receipts.json`
+> and `bench/benchmark.md` at build time — nothing is hand-typed. Re-derive
+> every claim offline with `python verify.py` (zero credits, no API key).
 
 ## 1. Idea → why this exists
 A solo dev who wants a game biome today opens the Lux3D console, burns credits
@@ -39,11 +38,10 @@ engine-ready delivery with receipts.
 <RECEIPT-PACK-TABLE:cozy-dungeon>
 <RECEIPT-PACK-TABLE:sci-fi-outpost>
 <RECEIPT-BENCH-TABLE>
-<RECEIPT-TOTALS: assets, credits, wall-clock, pass rates, repair-recovery count>
+<RECEIPT-TOTALS>
 
 ## 5. Honest limits
-<RECEIPT-FAILURES: recorded failures + mutation reasons + published benchmark
-misses — failures are a feature of the receipts design>
+<RECEIPT-FAILURES>
 
 ## 6. Where Lux3D is load-bearing
 Every delivered asset is a Lux3D task ID in our receipts; remove Lux3D and

@@ -1,0 +1,380 @@
+{
+  "version": "G1-Turbo",
+  "ts": 1795072211,
+  "runs": [
+    {
+      "category": "strength-baseline",
+      "expectation": "high",
+      "prompt": "a stone garden bench with two solid legs, clean silhouette",
+      "task_id": 8402781,
+      "passed": true,
+      "face_count": 55498,
+      "has_texture": true,
+      "dims": [
+        1.8,
+        0.7943,
+        0.4588
+      ],
+      "sha256": "1d576c42dbc7",
+      "failed_gates": [],
+      "seconds": 115.3
+    },
+    {
+      "category": "strength-baseline",
+      "expectation": "high",
+      "prompt": "a ceramic vase with a smooth rounded body and narrow neck",
+      "task_id": 8402783,
+      "passed": true,
+      "face_count": 54738,
+      "has_texture": true,
+      "dims": [
+        0.2808,
+        0.32,
+        0.2763
+      ],
+      "sha256": "5109e8b365c6",
+      "failed_gates": [],
+      "seconds": 122.3
+    },
+    {
+      "category": "strength-baseline",
+      "expectation": "high",
+      "prompt": "a leather-bound rectangular storage box with brass corners",
+      "task_id": 8402782,
+      "passed": true,
+      "face_count": 55382,
+      "has_texture": true,
+      "dims": [
+        0.35,
+        0.1642,
+        0.2344
+      ],
+      "sha256": "90cec2bf5396",
+      "failed_gates": [],
+      "seconds": 124.7
+    },
+    {
+      "category": "strength-baseline",
+      "expectation": "high",
+      "prompt": "a simple three-legged wooden stool",
+      "task_id": 8402992,
+      "passed": true,
+      "face_count": 49326,
+      "has_texture": true,
+      "dims": [
+        0.4557,
+        0.65,
+        0.4509
+      ],
+      "sha256": "b7fb42271986",
+      "failed_gates": [],
+      "seconds": 106.2
+    },
+    {
+      "category": "strength-baseline",
+      "expectation": "high",
+      "prompt": "a metal cooking pot with two short handles",
+      "task_id": 8403015,
+      "passed": true,
+      "face_count": 33576,
+      "has_texture": true,
+      "dims": [
+        0.28,
+        0.1364,
+        0.1994
+      ],
+      "sha256": "fbf1d517341e",
+      "failed_gates": [],
+      "seconds": 145.8
+    },
+    {
+      "category": "strength-baseline",
+      "expectation": "high",
+      "prompt": "a round stone well ring with a thick rim",
+      "task_id": 8403022,
+      "passed": true,
+      "face_count": 52702,
+      "has_texture": true,
+      "dims": [
+        0.45,
+        0.2111,
+        0.45
+      ],
+      "sha256": "b9fff454d2f6",
+      "failed_gates": [],
+      "seconds": 160.0
+    },
+    {
+      "category": "patterns-and-text",
+      "expectation": "mixed",
+      "prompt": "a ceramic mug with one large bold painted stripe pattern",
+      "task_id": 8403250,
+      "passed": true,
+      "face_count": 53862,
+      "has_texture": true,
+      "dims": [
+        0.1113,
+        0.095,
+        0.0805
+      ],
+      "sha256": "db0bf3c12b29",
+      "failed_gates": [],
+      "seconds": 111.9
+    },
+    {
+      "category": "patterns-and-text",
+      "expectation": "mixed",
+      "prompt": "a wooden crate lid with one large simple painted symbol",
+      "task_id": 8403340,
+      "passed": true,
+      "face_count": 41600,
+      "has_texture": true,
+      "dims": [
+        0.6,
+        0.5363,
+        0.6001
+      ],
+      "sha256": "bbf70038c285",
+      "failed_gates": [],
+      "seconds": 138.9
+    },
+    {
+      "category": "patterns-and-text",
+      "expectation": "mixed",
+      "prompt": "a book with a small readable title printed on the spine",
+      "task_id": 8403378,
+      "passed": true,
+      "face_count": 54354,
+      "has_texture": true,
+      "dims": [
+        0.23,
+        0.9082,
+        0.6322
+      ],
+      "sha256": "0a89132f004e",
+      "failed_gates": [],
+      "seconds": 161.0
+    },
+    {
+      "category": "patterns-and-text",
+      "expectation": "mixed",
+      "prompt": "a bottle with a small printed paper label with fine lines",
+      "task_id": 8403486,
+      "passed": true,
+      "face_count": 54630,
+      "has_texture": true,
+      "dims": [
+        0.116,
+        0.29,
+        0.116
+      ],
+      "sha256": "271f49ccfe36",
+      "failed_gates": [],
+      "seconds": 112.6
+    },
+    {
+      "category": "geometric-complexity",
+      "expectation": "low",
+      "prompt": "a simple wooden chair with four straight legs and a flat back",
+      "task_id": 8403612,
+      "passed": true,
+      "face_count": 53376,
+      "has_texture": true,
+      "dims": [
+        0.4345,
+        0.92,
+        0.4949
+      ],
+      "sha256": "c122a4ea161c",
+      "failed_gates": [],
+      "seconds": 113.4
+    },
+    {
+      "category": "geometric-complexity",
+      "expectation": "low",
+      "prompt": "an ornate carved throne with intricate relief patterns on every surface",
+      "task_id": 8403678,
+      "passed": true,
+      "face_count": 62272,
+      "has_texture": true,
+      "dims": [
+        0.8909,
+        1.45,
+        0.6889
+      ],
+      "sha256": "2eb04b773b21",
+      "failed_gates": [],
+      "seconds": 114.4
+    },
+    {
+      "category": "geometric-complexity",
+      "expectation": "low",
+      "prompt": "a chandelier with many thin intertwined metal branches",
+      "task_id": 8403680,
+      "passed": true,
+      "face_count": 77268,
+      "has_texture": true,
+      "dims": [
+        1.1,
+        1.0743,
+        1.1003
+      ],
+      "sha256": "0147b6a54904",
+      "failed_gates": [],
+      "seconds": 116.7
+    },
+    {
+      "category": "geometric-complexity",
+      "expectation": "low",
+      "prompt": "a wooden shelf bracket with clean straight supports",
+      "task_id": 8403863,
+      "passed": true,
+      "face_count": 52608,
+      "has_texture": true,
+      "dims": [
+        0.3,
+        1.9284,
+        1.6574
+      ],
+      "sha256": "1f516398348c",
+      "failed_gates": [],
+      "seconds": 192.5
+    },
+    {
+      "category": "materials-hard",
+      "expectation": "low",
+      "prompt": "a brushed steel toolbox with a simple handle",
+      "task_id": 8404033,
+      "passed": true,
+      "face_count": 55756,
+      "has_texture": true,
+      "dims": [
+        0.45,
+        0.3017,
+        0.2494
+      ],
+      "sha256": "5773e4ae598d",
+      "failed_gates": [],
+      "seconds": 186.8
+    },
+    {
+      "category": "materials-hard",
+      "expectation": "low",
+      "prompt": "a clear transparent glass drinking cup",
+      "task_id": 8404056,
+      "passed": true,
+      "face_count": 53762,
+      "has_texture": true,
+      "dims": [
+        0.0874,
+        0.105,
+        0.087
+      ],
+      "sha256": "8d70c4e75ce6",
+      "failed_gates": [],
+      "seconds": 225.2
+    },
+    {
+      "category": "materials-hard",
+      "expectation": "low",
+      "prompt": "a plush stuffed bear with long soft fabric fur",
+      "task_id": 8404550,
+      "passed": true,
+      "face_count": 53692,
+      "has_texture": true,
+      "dims": [
+        0.4015,
+        0.42,
+        0.2726
+      ],
+      "sha256": "1f4c1b403c56",
+      "failed_gates": [],
+      "seconds": 154.2
+    },
+    {
+      "category": "figures-and-plants",
+      "expectation": "low",
+      "prompt": "a simple wooden mannequin figure with no facial details",
+      "task_id": 8404755,
+      "passed": true,
+      "face_count": 51838,
+      "has_texture": true,
+      "dims": [
+        0.3,
+        0.892,
+        0.1548
+      ],
+      "sha256": "4f250aeae88e",
+      "failed_gates": [],
+      "seconds": 93.4
+    },
+    {
+      "category": "materials-hard",
+      "expectation": "low",
+      "prompt": "a matte ceramic planter pot with a wide rim",
+      "task_id": 8404655,
+      "passed": true,
+      "face_count": 53520,
+      "has_texture": true,
+      "dims": [
+        0.25,
+        0.2324,
+        0.2499
+      ],
+      "sha256": "073c195a0f86",
+      "failed_gates": [],
+      "seconds": 146.4
+    },
+    {
+      "category": "figures-and-plants",
+      "expectation": "low",
+      "prompt": "a human bust with detailed expressive facial features",
+      "task_id": 8404965,
+      "passed": true,
+      "face_count": 53542,
+      "has_texture": true,
+      "dims": [
+        0.2943,
+        0.45,
+        0.2731
+      ],
+      "sha256": "4a7a99f48523",
+      "failed_gates": [],
+      "seconds": 134.1
+    },
+    {
+      "category": "figures-and-plants",
+      "expectation": "low",
+      "prompt": "a dense leafy fern with many thin branching leaves",
+      "task_id": 8405029,
+      "passed": true,
+      "face_count": 75504,
+      "has_texture": true,
+      "dims": [
+        0.65,
+        0.6108,
+        0.6505
+      ],
+      "sha256": "c54c1ffd4e48",
+      "failed_gates": [],
+      "seconds": 141.9
+    },
+    {
+      "category": "figures-and-plants",
+      "expectation": "low",
+      "prompt": "a potted cactus with thick smooth leaves",
+      "task_id": 8404993,
+      "passed": true,
+      "face_count": 60116,
+      "has_texture": true,
+      "dims": [
+        0.2875,
+        0.45,
+        0.1941
+      ],
+      "sha256": "9b2ec231d806",
+      "failed_gates": [],
+      "seconds": 333.3
+    }
+  ]
+}

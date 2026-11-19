@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AssetForge — measured capability boundaries</title>
+<style>
+  html,body { height:100%; margin:0; background:#0c0c0f; overflow:hidden;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:#d6d2c4; }
+  .wrap { padding:44px 56px; }
+  h3 { margin:0 0 18px; font-size:17px; color:#ffcf7e; letter-spacing:.05em; }
+  table { border-collapse:collapse; font-size:15.5px; }
+  th { background:#2f2a22; color:#f5efe1; text-align:left; padding:10px 16px; }
+  td { border-bottom:1px solid #2e2e3a; padding:9px 16px; }
+  tr:nth-child(even) td { background:#14141a; }
+  .ok { color:#8fd694; font-weight:700; } .bad { color:#ff8a70; font-weight:700; }
+  .note { margin-top:18px; font-size:13px; color:#9a958a; }
+  #cap { position:fixed; left:0; right:0; bottom:7%; text-align:center; }
+  #cap span { background:rgba(12,12,15,.92); color:#ffd9a0; font:600 15px/1.4
+    ui-monospace,Menlo,monospace; padding:9px 18px; border-radius:4px;
+    border:1px solid #6b5a33; letter-spacing:.03em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h3>LUX3D CAPABILITY BOUNDARIES — MEASURED, WITH RECEIPTS (G1-Turbo)</h3>
+  <table>
+    <tr><th>category</th><th>vendor claim</th><th>measured pass rate</th><th>verdict</th></tr>
+    <!--ROWS-->
+  </table>
+  <div class="note">Every row re-derivable from artifacts/bench/results.json (per-run Lux3D task IDs).
+    The failure taxonomy is the point — we publish what the model cannot reliably do.</div>
+</div>
+<div id="cap"><span>22 measured runs: Lux3D beat its own published weak-zone expectations on coarse production gates</span></div>
+<script>
+// rows injected via ?rows= JSON at capture time by video/fill_bench.js
+</script>
+</body>
+</html>

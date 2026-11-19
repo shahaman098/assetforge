@@ -1,0 +1,41 @@
+# Contributed recipe: market-stall pack (game target)
+# Recipes are just pack briefs — the community contribution format of AssetForge.
+# Usage: af build recipes/shop-stall.yaml
+name: shop-stall
+target: game
+engine: threejs
+style:
+  palette: sun-bleached wood, woven straw, painted canvas
+  materials: [wood, straw, canvas, terracotta]
+  avoid: [small text, fine carvings, transparent materials, plush fabric, faces]
+  lux3d_style: hand_painted
+  theme:
+    fog: "#1c1a12"
+    floor: "#6b5a3c"
+    accent: "#e8c06a"
+budget:
+  version: G1-Turbo
+  face_count: 60000
+  max_credits_per_asset: 40
+  max_retries: 1
+slots:
+  - slot: awning
+    position: [0, 0, 0]
+    rotation: [0, 0, 0]
+    prompt: "a striped canvas market awning on two wooden posts, clean simple shapes, stylized low-poly game asset"
+  - slot: crate
+    position: [-1.4, 0, 0.6]
+    rotation: [0, 20, 0]
+    prompt: "an open wooden produce crate filled with round fruit, clean silhouette, stylized low-poly game asset"
+  - slot: basket
+    position: [1.3, 0, 0.5]
+    rotation: [0, -25, 0]
+    prompt: "a woven straw basket with a sturdy rim, smooth rounded body, stylized low-poly game asset"
+  - slot: scale
+    position: [0.3, 0, 1.4]
+    rotation: [0, 0, 0]
+    prompt: "a small brass balance scale on a wooden base, simple clean shape, stylized game asset"
+  - slot: jar
+    position: [-0.6, 0, 1.2]
+    rotation: [0, 40, 0]
+    prompt: "a fat terracotta jar with a wide mouth, clean silhouette, stylized low-poly game asset"
