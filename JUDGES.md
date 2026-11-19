@@ -16,6 +16,19 @@ rendered from receipts by scripts.
 | 6 | Our capability benchmark measures the vendor's own boundary claims | `bench/benchmark.md` + `artifacts/bench/results.json` (per-run task IDs) | re-run `./af bench --max-jobs 4 --categories strength-baseline` with your own key, or read results.json |
 | 7 | Verification costs zero credits | `assetforge/verifier.py` — pure stdlib + trimesh, no network calls | unplug the network, run `python verify.py` |
 
+## 5 分钟评委指南 (Chinese)
+
+| # | 主张 | 证据 | 离线复验 |
+|---|---|---|---|
+| 1 | 每个交付资产都由 Aholo Lux3D 生成 | `artifacts/*/receipts.json`：提示词、Lux3D 任务号、耗时、sha256；API 调用日志 `artifacts/ledger.jsonl` | `python verify.py` |
+| 2 | 每个资产都通过确定性质检 | 回执中的逐项门禁（面数 10k–300k、贴图、包围盒） | `python verify.py` 当场复跑门禁 |
+| 3 | 失败资产被排除而非隐藏 | 清单(manifest)只含通过项；探测任务 8397194（要求 10,000 面数，实得 7,976）被排除并记录在案 | `python verify.py` 校验 清单≡回执 |
+| 4 | 一个 YAML 构建整个资产包 | `packs/*.yaml` 即全部输入 | `./af plan packs/cozy-dungeon.yaml`（不调 API） |
+| 5 | 切换 YAML 即整体换皮 | `web/manifests/*.json` 同槽位、不同风格 | 打开 demo 点第二个包按钮 |
+| 6 | 能力边界实测 | `bench/benchmark.md`：22 次 G1-Turbo 运行，粗粒度生产门禁全部通过（含官方文档标注的弱势类别），逐次任务号见 `artifacts/bench/results.json` | 可用自己的 key 复跑 `./af bench` |
+
+要点：验证**不花积分、不需要 API Key、不联网**。诚实的边界：粗粒度门禁不评判小字、人脸、浮雕等精细保真度（官方文档标注的弱势区），我们的包提示词刻意避开这些区域。
+
 ## 5-minute path
 
 1. `python verify.py` — watch every receipt re-derive offline (~seconds).
