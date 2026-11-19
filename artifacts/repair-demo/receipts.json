@@ -1,0 +1,105 @@
+{
+  "pack": "repair-demo",
+  "target": "game",
+  "budget": {
+    "version": "G1-Turbo",
+    "face_count": 60000,
+    "max_credits_per_asset": 40,
+    "max_retries": 1
+  },
+  "lux3d_style": "photorealistic",
+  "assets": [
+    {
+      "pack": "repair-demo",
+      "slot": "cup",
+      "passed": true,
+      "attempts": [
+        {
+          "prompt": "a clear transparent glass drinking cup, thin walls, see-through material",
+          "task_id": 8403147,
+          "status": 3,
+          "seconds": 150.6,
+          "sha256": "358d34ff75a8828ed1185ec5b3031fa3c2b1ca9af68629d273702bef2f2fca35",
+          "bytes": 8941292,
+          "gates": {
+            "passed": true,
+            "checks": [
+              {
+                "gate": "glb_parse",
+                "passed": true,
+                "value": "valid",
+                "expected": "valid GLB",
+                "note": "stdlib GLB parser"
+              },
+              {
+                "gate": "face_count",
+                "passed": true,
+                "value": 30542,
+                "expected": "10000-300000",
+                "note": "target 60000 (vendor bounds 10000-300000)"
+              },
+              {
+                "gate": "texture",
+                "passed": true,
+                "value": true,
+                "expected": true,
+                "note": "baseColorTexture present in any material"
+              },
+              {
+                "gate": "bbox_sane",
+                "passed": true,
+                "value": [
+                  0.0948,
+                  0.15,
+                  0.0947
+                ],
+                "expected": "all dims > 0.01",
+                "note": "degenerate meshes rejected"
+              }
+            ],
+            "stats": {
+              "valid_glb": true,
+              "face_count": 30542,
+              "vertex_count": 22544,
+              "min": [
+                -0.04741736501455307,
+                -0.07500000298023224,
+                -0.047333013266325
+              ],
+              "max": [
+                0.04741736501455307,
+                0.07500000298023224,
+                0.047333013266325
+              ],
+              "dims": [
+                0.0948,
+                0.15,
+                0.0947
+              ],
+              "has_texture": true,
+              "materials": 1,
+              "meshes": 1
+            }
+          }
+        }
+      ],
+      "mutation_reasons": [],
+      "final": {
+        "task_id": 8403147,
+        "sha256": "358d34ff75a8828ed1185ec5b3031fa3c2b1ca9af68629d273702bef2f2fca35",
+        "bytes": 8941292,
+        "face_count": 30542,
+        "has_texture": true,
+        "dims": [
+          0.0948,
+          0.15,
+          0.0947
+        ],
+        "seconds": 150.6
+      },
+      "generator": "Aholo Lux3D via official manycore-aholo-sdk-lux3d",
+      "ts": 1795071322
+    }
+  ],
+  "ts": 1795071322
+}

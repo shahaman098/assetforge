@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AssetForge — terminal replay</title>
+<style>
+  html,body { height:100%; margin:0; background:#0c0c0f; overflow:hidden;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  #term { padding:26px 30px; color:#d6d2c4; font-size:15.5px; line-height:1.62; white-space:pre; }
+  #cap { position:fixed; left:0; right:0; bottom:7%; text-align:center; }
+  #cap span { background:rgba(12,12,15,.92); color:#ffd9a0; font:600 15px/1.4
+    ui-monospace,Menlo,monospace; padding:9px 18px; border-radius:4px;
+    border:1px solid #6b5a33; letter-spacing:.03em; }
+  .g { color:#8fd694; } .r { color:#ff8a70; } .y { color:#ffcf7e; } .dim { color:#6f6a5c; }
+</style>
+</head>
+<body>
+<div id="term"></div>
+<div id="cap" style="display:none"><span id="captxt"></span></div>
+<script>
+const LINES = [
+  { t: "$ af build packs/cozy-dungeon.yaml", cls: "y", pause: 500 },
+  { t: "AssetForge plan — pack 'cozy-dungeon' (target=game)", cls: "", pause: 90 },
+  { t: "  style bible : warm candlelit stone, aged oak, brass accents", cls: "dim", pause: 60 },
+  { t: "  lux3d_style : fantasy   version: G1-Turbo   face_count: 60000", cls: "dim", pause: 60 },
+  { t: "  quote: 6 assets · ~120 credits best case (~240 with retries) · ~9 min", cls: "dim", pause: 420 },
+  { t: "", cls: "", pause: 120 },
+  { t: "building 6 assets, concurrency=3 ...", cls: "", pause: 420 },
+  { t: "  [crate]   attempt 1: task 8397544 queued (G1-Turbo, style=fantasy)", cls: "dim", pause: 140 },
+  { t: "  [barrel]  attempt 1: task 8397545 queued (G1-Turbo, style=fantasy)", cls: "dim", pause: 140 },
+  { t: "  [brazier] attempt 1: task 8397547 queued (G1-Turbo, style=fantasy)", cls: "dim", pause: 300 },
+  { t: "  [barrel]  attempt 1: PASS faces=49662 tex=True dims=[0.71,0.75,0.71] (115s, task 8397545)", cls: "g", pause: 150 },
+  { t: "  [crate]   attempt 1: PASS faces=53788 tex=True dims=[0.45,0.45,0.45] (124s, task 8397544)", cls: "g", pause: 150 },
+  { t: "  [brazier] attempt 1: PASS faces=57038 tex=True (175s, task 8397547)", cls: "g", pause: 150 },
+  { t: "  [chest]   attempt 1: PASS faces=53496 tex=True (164s, task 8397811)", cls: "g", pause: 150 },
+  { t: "  [lantern] attempt 1: PASS faces=74438 tex=True (114s, task 8397853)", cls: "g", pause: 150 },
+  { t: "  [golem]   attempt 1: PASS faces=52098 tex=True (189s, task 8397954)", cls: "g", pause: 420 },
+  { t: "", cls: "", pause: 120 },
+  { t: "delivered: 6/6 assets passed gates -> artifacts/cozy-dungeon", cls: "", pause: 200 },
+  { t: "receipts  -> artifacts/cozy-dungeon/receipts.json   (re-verify: python verify.py)", cls: "dim", pause: 420 },
+];
+const SPEED = parseFloat(new URLSearchParams(location.search).get('speed') || '1');
+const term = document.getElementById('term');
+let html = '';
+let i = 0;
+function step() {
+  if (i >= LINES.length) { document.dispatchEvent(new Event('done')); return; }
+  const L = LINES[i++];
+  const line = L.t.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  html += `<span class="${L.cls}">${line}</span>\n`;
+  term.innerHTML = html;
+  setTimeout(step, L.pause * SPEED);
+}
+step();
+function caption(text, ms) {
+  const cap = document.getElementById('cap');
+  document.getElementById('captxt').textContent = text;
+  cap.style.display = 'block';
+  setTimeout(() => { cap.style.display = 'none'; }, ms);
+}
+window.__CAP = caption;
+</script>
+</body>
+</html>

@@ -7,3 +7,12 @@ artifacts/bench/downloads/
 artifacts/probe/
 tests/fixtures/*.glb
 .aholo_key
+video/frames/
+video/build/a_hook.mp4
+video/build/b_build.mp4
+video/build/c_fail.mp4
+video/build/d_collect.mp4
+video/build/e_swap.mp4
+video/build/e_sweep.mp4
+video/build/f_verify.mp4
+video/build/h_close.mp4

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AssetForge — offline verification replay</title>
+<style>
+  html,body { height:100%; margin:0; background:#0c0c0f; overflow:hidden;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  #term { padding:22px 28px; color:#d6d2c4; font-size:13.5px; line-height:1.55; white-space:pre; }
+  .g { color:#8fd694; font-weight:600; }
+  .b { color:#9fd8ff; }
+  .w { color:#ffcf7e; font-weight:700; }
+  #cap { position:fixed; left:0; right:0; bottom:6%; text-align:center; }
+  #cap span { background:rgba(12,12,15,.92); color:#ffd9a0; font:600 15px/1.4
+    ui-monospace,Menlo,monospace; padding:9px 18px; border-radius:4px;
+    border:1px solid #6b5a33; letter-spacing:.03em; }
+</style>
+</head>
+<body>
+<div id="term"></div>
+<div id="cap" style="display:none"><span id="captxt"></span></div>
+<script>
+const LINES = [
+  { t: "$ python verify.py", cls: "b", pause: 600 },
+  { t: "AssetForge offline verification — re-deriving every claim from receipts", cls: "", pause: 200 },
+  { t: "(zero credits, no network)...", cls: "", pause: 500 },
+  { t: "", cls: "", pause: 150 },
+  { t: "PACK cozy-dungeon   (style=fantasy)", cls: "", pause: 200 },
+  { t: "  asset 'crate'    [PASS] GLB present  [PASS] sha256 matches  [PASS] re-passes all gates offline  faces=53788", cls: "g", pause: 110 },
+  { t: "  asset 'barrel'   [PASS] GLB present  [PASS] sha256 matches  [PASS] re-passes all gates offline  faces=49662", cls: "g", pause: 110 },
+  { t: "  asset 'brazier'  [PASS] GLB present  [PASS] sha256 matches  [PASS] re-passes all gates offline  faces=57038", cls: "g", pause: 110 },
+  { t: "  asset 'chest'    [PASS] GLB present  [PASS] sha256 matches  [PASS] re-passes all gates offline  faces=53496", cls: "g", pause: 110 },
+  { t: "  asset 'lantern'  [PASS] GLB present  [PASS] sha256 matches  [PASS] re-passes all gates offline  faces=74438", cls: "g", pause: 110 },
+  { t: "  asset 'golem'    [PASS] GLB present  [PASS] sha256 matches  [PASS] re-passes all gates offline  faces=52098", cls: "g", pause: 250 },
+  { t: "  -> 6/6 assets verified offline, zero credits, no API key.", cls: "w", pause: 200 },
+  { t: "", cls: "", pause: 120 },
+  { t: "PACK sci-fi-outpost (style=cyberpunk)", cls: "", pause: 200 },
+  { t: "  crate · barrel · brazier · chest · lantern · golem   [PASS] ×6", cls: "g", pause: 350 },
+  { t: "  -> 6/6 assets verified offline.", cls: "w", pause: 250 },
+  { t: "", cls: "", pause: 120 },
+  { t: "VERDICT: ALL RECEIPTS RE-DERIVED CLEAN", cls: "g", pause: 800 },
+];
+const SPEED = parseFloat(new URLSearchParams(location.search).get('speed') || '1');
+const term = document.getElementById('term');
+let html = '', i = 0;
+function step() {
+  if (i >= LINES.length) return;
+  const L = LINES[i++];
+  const line = L.t.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  html += `<span class="${L.cls}">${line}</span>\n`;
+  term.innerHTML = html;
+  setTimeout(step, L.pause * SPEED);
+}
+step();
+function caption(text, ms) {
+  const cap = document.getElementById('cap');
+  document.getElementById('captxt').textContent = text;
+  cap.style.display = 'block';
+  setTimeout(() => { cap.style.display = 'none'; }, ms);
+}
+window.__CAP = caption;
+</script>
+</body>
+</html>

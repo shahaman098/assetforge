@@ -41,3 +41,47 @@
 {"ts": 1795070998, "action": "create", "task_id": 8402783, "prompt": "a ceramic vase with a smooth rounded body and narrow neck", "version": "G1-Turbo", "style": "", "face_count": 60000}
 {"ts": 1795070998, "action": "create", "task_id": 8402782, "prompt": "a leather-bound rectangular storage box with brass corners", "version": "G1-Turbo", "style": "", "face_count": 60000}
 {"ts": 1795071102, "action": "wait", "task_id": 8402781, "status": 3, "seconds": 104.3}
+{"ts": 1795071112, "action": "download", "task_id": 8402781, "files": [["artifacts/bench/downloads/bench_8402781.glb", "downloaded"]]}
+{"ts": 1795071113, "action": "create", "task_id": 8402992, "prompt": "a simple three-legged wooden stool", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071115, "action": "wait", "task_id": 8402783, "status": 3, "seconds": 117.3}
+{"ts": 1795071116, "action": "wait", "task_id": 8402782, "status": 3, "seconds": 117.9}
+{"ts": 1795071118, "action": "download", "task_id": 8402783, "files": [["artifacts/bench/downloads/bench_8402783.glb", "downloaded"]]}
+{"ts": 1795071119, "action": "create", "task_id": 8403015, "prompt": "a metal cooking pot with two short handles", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071121, "action": "download", "task_id": 8402782, "files": [["artifacts/bench/downloads/bench_8402782.glb", "downloaded"]]}
+{"ts": 1795071122, "action": "create", "task_id": 8403022, "prompt": "a round stone well ring with a thick rim", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071172, "action": "create", "task_id": 8403147, "prompt": "a clear transparent glass drinking cup, thin walls, see-through material", "version": "G1-Turbo", "style": "photorealistic", "face_count": 60000}
+{"ts": 1795071213, "action": "wait", "task_id": 8402992, "status": 3, "seconds": 100.5}
+{"ts": 1795071218, "action": "download", "task_id": 8402992, "files": [["artifacts/bench/downloads/bench_8402992.glb", "downloaded"]]}
+{"ts": 1795071219, "action": "create", "task_id": 8403250, "prompt": "a ceramic mug with one large bold painted stripe pattern", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071261, "action": "wait", "task_id": 8403015, "status": 3, "seconds": 141.6}
+{"ts": 1795071264, "action": "download", "task_id": 8403015, "files": [["artifacts/bench/downloads/bench_8403015.glb", "downloaded"]]}
+{"ts": 1795071265, "action": "create", "task_id": 8403340, "prompt": "a wooden crate lid with one large simple painted symbol", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071274, "action": "wait", "task_id": 8403022, "status": 3, "seconds": 152.2}
+{"ts": 1795071277, "action": "wait", "task_id": 8403147, "status": 3, "seconds": 104.6}
+{"ts": 1795071281, "action": "download", "task_id": 8403022, "files": [["artifacts/bench/downloads/bench_8403022.glb", "downloaded"]]}
+{"ts": 1795071282, "action": "create", "task_id": 8403378, "prompt": "a book with a small readable title printed on the spine", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071320, "action": "wait", "task_id": 8403250, "status": 3, "seconds": 101.9}
+{"ts": 1795071321, "action": "download", "task_id": 8403147, "files": [["artifacts/repair-demo/downloads/try0/cup.glb", "downloaded"]]}
+{"ts": 1795071330, "action": "download", "task_id": 8403250, "files": [["artifacts/bench/downloads/bench_8403250.glb", "downloaded"]]}
+{"ts": 1795071331, "action": "create", "task_id": 8403486, "prompt": "a bottle with a small printed paper label with fine lines", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071395, "action": "wait", "task_id": 8403340, "status": 3, "seconds": 129.7}
+{"ts": 1795071403, "action": "download", "task_id": 8403340, "files": [["artifacts/bench/downloads/bench_8403340.glb", "downloaded"]]}
+{"ts": 1795071405, "action": "create", "task_id": 8403612, "prompt": "a simple wooden chair with four straight legs and a flat back", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071421, "action": "wait", "task_id": 8403378, "status": 3, "seconds": 139.0}
+{"ts": 1795071433, "action": "wait", "task_id": 8403486, "status": 3, "seconds": 101.5}
+{"ts": 1795071442, "action": "download", "task_id": 8403378, "files": [["artifacts/bench/downloads/bench_8403378.glb", "downloaded"]]}
+{"ts": 1795071442, "action": "download", "task_id": 8403486, "files": [["artifacts/bench/downloads/bench_8403486.glb", "downloaded"]]}
+{"ts": 1795071443, "action": "create", "task_id": 8403678, "prompt": "an ornate carved throne with intricate relief patterns on every surface", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071444, "action": "create", "task_id": 8403680, "prompt": "a chandelier with many thin intertwined metal branches", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071509, "action": "wait", "task_id": 8403612, "status": 3, "seconds": 104.3}
+{"ts": 1795071517, "action": "download", "task_id": 8403612, "files": [["artifacts/bench/downloads/bench_8403612.glb", "downloaded"]]}
+{"ts": 1795071518, "action": "create", "task_id": 8403863, "prompt": "a wooden shelf bracket with clean straight supports", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071546, "action": "wait", "task_id": 8403678, "status": 3, "seconds": 102.6}
+{"ts": 1795071547, "action": "wait", "task_id": 8403680, "status": 3, "seconds": 103.4}
+{"ts": 1795071556, "action": "download", "task_id": 8403678, "files": [["artifacts/bench/downloads/bench_8403678.glb", "downloaded"]]}
+{"ts": 1795071558, "action": "create", "task_id": 8404033, "prompt": "a brushed steel toolbox with a simple handle", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071559, "action": "download", "task_id": 8403680, "files": [["artifacts/bench/downloads/bench_8403680.glb", "downloaded"]]}
+{"ts": 1795071560, "action": "create", "task_id": 8404056, "prompt": "a clear transparent glass drinking cup", "version": "G1-Turbo", "style": "", "face_count": 60000}
+{"ts": 1795071706, "action": "wait", "task_id": 8403863, "status": 3, "seconds": 187.9}
+{"ts": 1795071709, "action": "download", "task_id": 8403863, "files": [["artifacts/bench/downloads/bench_8403863.glb", "downloaded"]]}
+{"ts": 1795071710, "action": "create", "task_id": 8404550, "prompt": "a plush stuffed bear with long soft fabric fur", "version": "G1-Turbo", "style": "", "face_count": 60000}

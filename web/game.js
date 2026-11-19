@@ -219,3 +219,25 @@ animate();
 
 const first = new URLSearchParams(location.search).get('pack') || 'cozy-dungeon';
 loadPack(first, { announce: true });
+
+// debug/capture hook (used by the demo video pipeline; harmless in production)
+window.__AF = {
+  camera, controls, scene, THREE, slotGroups: () => slotGroups,
+  collected: () => collected,
+  loadPack: (n) => loadPack(n, { announce: true }),
+  showCenter, showToast,
+  setCam: (x, y, z, tx, ty, tz) => {
+    camera.position.set(x, y, z); controls.target.set(tx, ty, tz); controls.update();
+  },
+  collectAt: (x, y, z) => {
+    // project a world point to screen and fire the real collect handler
+    const v = new THREE.Vector3(x, y, z).project(camera);
+    const c = document.querySelector('canvas').getBoundingClientRect();
+    const ev = new PointerEvent('pointerdown', {
+      clientX: c.left + (v.x + 1) / 2 * c.width,
+      clientY: c.top + (1 - v.y) / 2 * c.height,
+      bubbles: true });
+    document.querySelector('canvas').dispatchEvent(ev);
+  },
+  renderer
+};

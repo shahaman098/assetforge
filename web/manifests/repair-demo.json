@@ -1,0 +1,29 @@
+{
+  "name": "repair-demo",
+  "style": "photorealistic",
+  "theme": {
+    "fog": "#101014",
+    "floor": "#2a2a30",
+    "accent": "#9fd8ff"
+  },
+  "slots": [
+    {
+      "slot": "cup",
+      "file": "/artifacts/repair-demo/glbs/cup.glb",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fit": 1.2,
+      "sha256": "358d34ff75a8",
+      "task_id": 8403147,
+      "gates": "passed"
+    }
+  ]
+}

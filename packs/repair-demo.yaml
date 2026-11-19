@@ -1,0 +1,23 @@
+name: repair-demo
+target: game
+engine: threejs
+version_note: deliberately hard prompt (vendor-claimed weak material zone) to exercise the Repairer on camera
+style:
+  palette: single object study, clean neutral studio
+  materials: [ceramic, glass]
+  avoid: [small text]
+  lux3d_style: photorealistic
+  theme:
+    fog: "#101014"
+    floor: "#2a2a30"
+    accent: "#9fd8ff"
+budget:
+  version: G1-Turbo
+  face_count: 60000
+  max_credits_per_asset: 40
+  max_retries: 1
+slots:
+  - slot: cup
+    position: [0, 0, 0]
+    rotation: [0, 0, 0]
+    prompt: "a clear transparent glass drinking cup, thin walls, see-through material"
